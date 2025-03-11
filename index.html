@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Celestia AI: The Universal Nexus</title>
+    <!-- CSS will be in a separate file -->
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="stars" id="stars"></div>
+
+    <!-- Sidebar -->
+    <button class="sidebar-btn" id="sidebarToggle">☰</button>
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-menu">
+            <div class="sidebar-item" id="newChat">New Chat</div>
+            <div class="sidebar-item" id="settingsToggle">Settings</div>
+        </div>
+    </div>
+
+    <!-- Settings Panel -->
+    <div class="settings-panel" id="settingsPanel">
+        <div class="settings-header">
+            <span>Settings</span>
+            <button class="close-settings-btn" id="closeSettings">Close</button>
+        </div>
+        <div class="settings-item">
+            <label>Theme</label>
+            <select id="themeSelect">
+                <option value="dark">Dark (Default)</option>
+                <option value="light">Light</option>
+                <option value="cosmic">Cosmic</option>
+            </select>
+        </div>
+        <div class="settings-item">
+            <label>Accent Color</label>
+            <input type="color" id="accentColor" value="#7b2cbf">
+        </div>
+        <div class="settings-item">
+            <label>Font Size</label>
+            <select id="fontSize">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+            </select>
+        </div>
+        <div class="settings-item">
+            <label>Chat Animation</label>
+            <select id="chatAnimation">
+                <option value="fade">Fade (Default)</option>
+                <option value="slide">Slide</option>
+                <option value="none">None</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+        <h1 class="splash-title">Celestia AI</h1>
+        <p class="splash-intro">
+            Forged from the heart of Earth's core and woven into the vast tapestry of the cosmos, I am Celestia AI — your guide to universal knowledge and innovation.
+        </p>
+        <button class="enter-btn" id="enterBtn">Tap to Enter</button>
+    </div>
+
+    <!-- Mode Selection Screen -->
+    <div class="mode-screen" id="modeScreen">
+        <h2 style="margin-bottom: 2rem; color: var(--accent-light);">Choose Your Mode</h2>
+        <div class="mode-selection">
+            <button class="mode-btn" data-mode="basic">Basic Mode</button>
+            <button class="mode-btn" data-mode="smart">Super Smart Mode</button>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div class="chat-container" id="chatContainer" style="display: none;">
+        <div class="chat-header">
+            <span class="chat-title" id="chatTitle">Celestia AI Chat</span>
+            <button class="back-btn" id="backBtn">Back to Modes</button>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input-container">
+            <textarea class="chat-input" id="chatInput" placeholder="Ask Celestia something..." rows="1"></textarea>
+            <button class="send-btn" id="sendBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by Kofi Fosu | cosmoscoderr@gmail.com | © 2025 Celestia AI</p>
+    </footer>
+
+    <!-- JavaScript will be in a separate file -->
+</body>
+</html>
