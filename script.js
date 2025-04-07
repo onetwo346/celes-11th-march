@@ -22,7 +22,7 @@ let chatHistory = [];
 
 // API Configuration (Updated to use OpenAI)
 const API_CONFIG = {
-    key: "YOUR_OPENAI_API_KEY", // Replace with your actual API key
+    key: "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", // Replace with your actual API key
     endpoint: "https://api.openai.com/v1/chat/completions", 
     headers: {
         "Authorization": "Bearer YOUR_OPENAI_API_KEY", // Replace with your actual API key
